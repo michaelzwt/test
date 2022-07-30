@@ -72,7 +72,7 @@ public class SQL {
         return this;
     }
 
-    public SQL skipIncreaseOffset(boolean skipIncreaseOffset) {
+    public SQL skipIncreaseOffset(boolean increaseOffset) {
         this.skipIncreaseOffset = skipIncreaseOffset;
         return this;
     }
