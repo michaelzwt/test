@@ -31,8 +31,8 @@ public class CanonicalEvent extends LocalEvent {
         return managementNodeId;
     }
 
-    public void setManagementNodeId(String managementNodeId) {
-        this.managementNodeId = managementNodeId;
+    public void setManagementNodeId(String nodeId) {
+        this.managementNodeId = nodeId;
     }
 
     @Override
