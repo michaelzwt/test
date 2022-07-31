@@ -495,9 +495,9 @@ public class CloudBusImpl2 implements CloudBus, CloudBusIN, ManagementNodeChange
         }
 
         @Override
-        public Message deserialize(JsonElement jsonElement, Type type, JsonDeserializationContext jsonDeserializationContext) throws JsonParseException {
-            JsonObject jObj = jsonElement.getAsJsonObject();
-            Map.Entry<String, JsonElement> entry = jObj.entrySet().iterator().next();
+        public Message deserialize(JsonElement element, Type type, JsonDeserializationContext jsonDeserializationContext) throws JsonParseException {
+            JsonObject jObj = element.getAsJsonObject();
+            Map.Entry<String, element> entry = jObj.entrySet().iterator().next();
             String className = entry.getKey();
             Class<?> clazz;
             try {
